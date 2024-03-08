@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scrollable Dropdown Menu</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap JS (optional, only if you need dropdown functionality) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="indeewwx.css">
+  <script src="script.js"></script>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Navbar </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+        aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarScroll">
+        <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" id="go" style="--bs-scroll-height: 100px;">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Career</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2 pe-5" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+  </nav>
+
+  <h3 class="content">All Video</h3>
+  <div class="hamburger" onclick="toggleFilter()">
+    <span>hbvhu</span>
+    <span>hb</span>
+    <span> n </span>
+</div>
+  <div class="container-fluid">
+
+    <div class="row">
+      <div class="col-lg-2">
+        <div class="fillter" id="fillter">
+          filterrrrrr <!-- Filter content here -->
+       </div>
+       <div class="cards">
+         cardsssssssssssssssssssd
+           <!-- Cards content here -->
+       </div>
+      </div>
+
+
+      
+
+
+
+        <div class="dropdown filter">
+          <button class="btnn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+            data-bs-toggle="dropdown" aria-expanded="false">
+            Filter
+          </button>
+          <div class="dropdown-menu scrollable-menu" aria-labelledby="dropdownMenuButton">
+            <!-- Dropdown items -->
+            <a class="dropdown-item" href="#">bikes</a>
+            <a class="dropdown-item" href="#">scooter</a>
+            <a class="dropdown-item" href="#">spots</a>
+            <a class="dropdown-item" href="#">Item 1</a>
+            <a class="dropdown-item" href="#">Item 2</a>
+            <a class="dropdown-item" href="#">Item 3</a>
+            <a class="dropdown-item" href="#">Item 1</a>
+            <a class="dropdown-item" href="#">Item 2</a>
+            <a class="dropdown-item" href="#">Item 3</a>
+            <a class="dropdown-item" href="#">Item 1</a>
+            <a class="dropdown-item" href="#">Item 2</a>
+            <a class="dropdown-item" href="#">Item 3</a>
+            <!-- Add more items if needed -->
+          </div>
+        </div>
+        <div class="heading">
+          <h3 class="head">
+            Latest Videos in 1080 and 4k.
+          </h3>
+
+          <h4 class="hh">4K Recodings
+          </h4>
+          <p>
+            All your 4K in One Page
+          </p>
+        </div>
+
+
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-lg-2 col-sm-4 vid">
+              <video src="animal.1.mp4" width="280px"></video>
+              <h6>TITTLE: HD 4K VIDEO</h6>
+            </div>
+            <div class="col-lg-2 col-sm-4 vid">
+              <video src="animal.1.mp4" width="280px"></video>
+              <h6>TITTLE: HD 4K VIDEO</h6>
+            </div>
+            <div class="col-lg-2 col-sm-4 vid">
+              <video src="animal.1.mp4" width="280px"></video>
+              <h6>TITTLE: HD 4K VIDEO</h6>
+            </div>
+            <div class="col-lg-2 col-sm-4 vid">
+              <video src="animal.1.mp4" width="280px"></video>
+              <h6>TITTLE: HD 4K VIDEO</h6>
+            </div>
+            <div class="col-lg-2 col-sm-4 vid">
+              <video src="animal.1.mp4" width="280px"></video>
+              <h6>TITTLE: HD 4K VIDEO</h6>
+            </div>
+            <div class="col-lg-2 col-sm-4 vid">
+              <video src="animal.1.mp4" width="280px"></video>
+              <h6>TITTLE: HD 4K VIDEO</h6>
+            </div>
+            <div class="col-lg-2 col-sm-4 vid">
+              <video src="animal.1.mp4" width="280px"></video>
+              <h6>TITTLE: HD 4K VIDEO</h6>
+            </div>
+            <div class="col-lg-2 col-sm-4 vid">
+              <video src="animal.1.mp4" width="280px"></video>
+              <h6>TITTLE: HD 4K VIDEO</h6>
+            </div>
+            <div class="col-lg-2  vid">
+              <video src="animal.1.mp4" width="280px"></video>
+              <h6>TITTLE: HD 4K VIDEO</h6>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <script>
+      function toggleFilter() {
+          var filter = document.getElementById("filter");
+          if (filter.style.width === "20%") {
+              filter.style.width = "0";
+          } else {
+              filter.style.width = "20%";
+          }
+      }
+</body>
+
+</html>
+
+
+
+
+
+*{
+   padding: 0%;
+   margin: 0%;
+}
+body{
+}
+.scrollable-menu{
+   max-width: 50px;
+   max-height: 200px; /* Set maximum height for the dropdown menu */
+   overflow-y: auto;
+}
+.dropdown{
+   margin-right: 70px;
+   margin-left: 10px;
+ 
+}
+.bttn{
+   margin-top: 5px;
+   width: 100%;
+   height: 10vh;
+   overflow: auto;
+   overflow-x:scroll;           
+   white-space: nowrap; 
+}
+.flt{
+   margin: 1px 20px;
+   padding: 5px 10px;
+   border: none;
+   border-radius: 5px;
+}
+.flt:hover{
+   color:black;
+   background-color:rgb(183, 236, 219)
+}
+.btnn{
+   
+   border-radius: 5px;
+   padding: 5px 10px;
+   font-size: 15x;
+   font-style:italic;
+   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   color: rgb(221, 61, 61);
+   border-color: rgb(221, 61, 61);
+}
+.btn:hover{
+   color:blueviolet;
+}
+.content{
+   padding-left: 45%;
+   font-weight: bold;
+   font-family:'Times New Roman', Times, serif;
+   text-decoration: underline;
+   padding-top: 15px;
+   background: rgb(89, 176, 226);
+   padding-bottom: 8px;
+}
+.bttn{
+   font-size: 17px;
+   font-style: normal;
+   font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
+}
+nav{
+   position: sticky;
+}
+
+.h4{
+   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   color: black;
+}
+.vid{
+   border: 1px solid ;
+}
+.side{
+   margin: auto;
+   color: black;
+   height: 400px;
+   background: #c0bebe;
+   
+}
+
+.head{
+   font-size: 35px;
+   color: black
+}
+
+p{
+   color: black;
+}
+body{
+   background:rgb(219, 219, 219)
+}
+.btn{
+   border: .5px solid;
+   width: 150px;
+   margin-top: 20px; 
+
+}
+.btn:hover{
+   color:rgb(89, 176, 226);
+   border: 2px solid;
+}
+.hh{
+   color: black;
+}
+
+.vid{
+   width: 300px;
+   margin: 10px 30px;
+   border: none;
+}
+.filter{
+   display: flex;
+   justify-content: end;
+}
+body {
+   margin: 0;
+   padding: 0;
+   font-family: Arial, sans-serif;
+}
+.container {
+   display: flex;
+}
+.filter {
+   width: 20%;
+   background-color: #f4f4f4;
+   transition: width 0.3s ease;
+}
+.cards {
+   width: 80%;
+}
+.hamburger {
+   position: absolute;
+   top: 10px;
+   left: 10px;
+   cursor: pointer;
+}
+.hamburger span {
+   display: block;
+   width: 25px;
+   height: 3px;
+   background-color: #333;
+   margin-bottom: 5px;
+}
+
+
+<div class="row">
+            <div class="col-lg-2col-sm-4 vid">
+              <video src="animal.1.mp4" width="200px"></video>
+              <h6>TITTLE: HD 4K VIDEO</h6>
+            </div>
+            <div class="col-lg-2 col-sm-4 vid">
+              <video src="animal.1.mp4" width="200px"></video>
+              <h6>TITTLE: HD 4K VIDEO</h6>
+            </div>
+            <div class="col-lg-2 col-sm-4 vid">
+              <video src="animal.1.mp4" width="100px"></video>
+              <h6>TITTLE: HD 4K VIDEO</h6>
+            </div>
+            <div class="col-lg-2 col-sm-4 vid">
+              <video src="animal.1.mp4" width="2800px"></video>
+              <h6>TITTLE: HD 4K VIDEO</h6>
+            </div>
+            <div class="col-lg-2 col-sm-4 vid">
+              <video src="animal.1.mp4" width="280px"></video>
+              <h6>TITTLE: HD 4K VIDEO</h6>
+            </div>
+            <div class="col-lg-2 col-sm-4 vid">
+              <video src="animal.1.mp4" width="280px"></video>
+              <h6>TITTLE: HD 4K VIDEO</h6>
+            </div>
+            <div class="col-lg-2 col-sm-4 vid">
+              <video src="animal.1.mp4" width="280px"></video>
+              <h6>TITTLE: HD 4K VIDEO</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <div class="hamburger" onclick="toggleFilter()">
+    <svg xmlns="http://www.w3.org/2000/svg" width="40px" viewBox="0 0 24 24" >
+      <g data-name="Circle kanan">
+        <path d="M12 22a10 10 0 1 1 10-10 10.011 10.011 0 0 1-10 10zm0-18a8 8 0 1 0 8 8 8.009 8.009 0 0 0-8-8z"
+          style="fill:#1c1b1e" />
+        <path
+          d="M11 16a1 1 0 0 1-.707-1.707L12.586 12l-2.293-2.293a1 1 0 0 1 1.414-1.414l3 3a1 1 0 0 1 0 1.414l-3 3A1 1 0 0 1 11 16z"
+          style="fill:#1c1b1e" />
+      </g>
+    </svg>
+  </div>
+
+  <div class="container">
+    <div class="filter" id="filter">
+      <button class="btn">Dashboard</button>
+      <button class="btn">Dashboard</button>
+      <button class="btn">Dashboard</button>
+    </div>
+    <div class="container-fluid">
+      <div class="cards">
+        <div class="row col-lg-12">
+          <div class="col-lg-4 col-sm-4 vid">
+            <video src="animal.1.mp4" width="230px"></video>
+            <h6>TITTLE: HD 4K VIDEO</h6>
+          </div>
+          <div class="col-lg-4 col-sm-4 vid">
+            <video src="animal.2.mp4" width="230px"></video>
+            <h6>TITTLE: HD 4K VIDEO</h6>
+          </div>
+          <div class="col-lg-4 col-sm-4 vid">
+            <video src="animal.3.mp4" width="230px"></video>
+            <h6>TITTLE: HD 4K VIDEO</h6>
+          </div>
+          <div class="col-lg-4 col-sm-4 vid">
+            <video src="animal.4.mp4" width="230px"></video>
+            <h6>TITTLE: HD 4K VIDEO</h6>
+          </div>
+          <div class="col-lg-4 col-sm-4 vid">
+            <video src="animal.2.mp4" width="230px"></video>
+            <h6>TITTLE: HD 4K VIDEO</h6>
+          </div>
+          <div class="col-lg-4 col-sm-4 vid">
+            <video src="animal.4.mp4" width="230px"></video>
+            <h6>TITTLE: HD 4K VIDEO</h6>
+          </div>
+          <div class="col-lg-4 col-sm-4 vid">
+            <video src="animal.3.mp4" width="230px"></video>
+            <h6>TITTLE: HD 4K VIDEO</h6>
+          </div>
+          <div class="col-lg-4 col-sm-4 vid">
+            <video src="animal.1.mp4" width="230px"></video>
+            <h6>TITTLE: HD 4K VIDEO</h6>
+          </div>
+        </div>
+      </div>
+    </div>
+
